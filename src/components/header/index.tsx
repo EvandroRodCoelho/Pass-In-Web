@@ -1,4 +1,5 @@
 import Icon from "../../assets/Frame 7108.svg"
+import { NavLink } from "../nav-link";
 
 export function Header() {
     return (
@@ -6,8 +7,12 @@ export function Header() {
             <img src={Icon} alt="Icon" />
 
             <nav className="flex items-center gap-5">
-                <a href="" className="text-sm font-medium text-zinc-300">Eventos</a>
-                <a href="" className="text-sm font-medium">Participantes</a>
+                <NavLink href="">
+                    Eventos
+                </NavLink>
+                <NavLink href="">
+                    Participantes
+                </NavLink>
             </nav>
         </div>
     );
